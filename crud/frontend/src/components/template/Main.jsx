@@ -4,7 +4,7 @@ import Header from './Header'
 
 export default props => (
     <div>
-        <Header />
+        <Header  {...props}/>
         <main className="content">
             Conteúdo
         </main>

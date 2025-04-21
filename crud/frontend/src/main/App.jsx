@@ -1,4 +1,6 @@
-import React from 'react';
+ import React from 'react';
+ import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
 import './App.css'
 import Logo from '../components/template/Logo';
 import Nav from '../components/template/Nav';
@@ -10,7 +12,7 @@ export default function App() {
     <div className="app">  {/* Aplicando a classe app aqui */}
       <Logo />
       <Nav />
-      <Main />
+      <Main icon="home" title="Início" subtitle="Segundo projeto React" />
       <Footer />
     </div>
   );
