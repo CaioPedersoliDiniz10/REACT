@@ -1,14 +1,12 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-
+import { Routes, Route } from "react-router-dom";
 import Home from '../components/home/Home';
 import UserCrud from '../components/user/UserCrud';
 
-export default function AppRoutes() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/users" element={<UserCrud />} />
-    </Routes>
-  );
-}
+export default props => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/users" element={<UserCrud />} />
+    <Route path="*" element={<Home />} /> {/* Rota de fallback */}
+  </Routes>
+);
