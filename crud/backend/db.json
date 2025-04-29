@@ -1,3 +1,9 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "CAIO PEDERSOLI DINIZ",
+      "email": "caiodiniz4867@gmail.com",
+      "id": 1
+    }
+  ]
 }
